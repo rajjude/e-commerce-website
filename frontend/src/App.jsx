@@ -39,10 +39,7 @@ export default function App() {
       <div className="relative z-50 pt-20">
         <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={user ? <Home /> : <Navigate to={"/login"} />}
-          />
+          <Route path="/" element={<Home />} />
           <Route
             path="/signup"
             element={!user ? <Signup /> : <Navigate to={"/"} />}
